@@ -1,0 +1,12 @@
+.wrapper{
+  @apply px-4 py-[50px]
+}
+
+.formWrapper{
+  @apply flex items-center flex-col gap-8
+}
+
+.formBtn{
+  @apply self-start
+}
+

@@ -1,0 +1,9 @@
+.btn {
+  @apply text-center text-xl px-[45px] py-2  text-white rounded-md transition ease-in-out duration-500;
+  &.main{
+    @apply min-h-[60px] bg-accent-white-20 hover:bg-accent-40
+  }
+  &.other{
+    @apply bg-accent-40 hover:bg-accent-white-20
+  }
+}

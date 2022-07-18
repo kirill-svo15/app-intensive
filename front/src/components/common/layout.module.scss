@@ -1,4 +1,21 @@
 
 .wrapper{
-  @apply bg-dark-purple h-screen p-4
+  @apply bg-dark-purple h-screen p-4 bg-no-repeat bg-center bg-cover max-w-[500px] m-auto;
+  &.other{
+    @apply h-[280px] rounded-br-2xl rounded-bl-2xl;
+  }
+  &.home{
+    @apply flex flex-col justify-between;
+  }
+}
+
+.otherWrapper{
+  @apply max-w-[500px] m-auto bg-black h-screen shadow-accent;
+  .heading{
+    @apply text-left;
+  }
+}
+
+.heading{
+  @apply font-bold text-3xl text-center text-white uppercase;
 }

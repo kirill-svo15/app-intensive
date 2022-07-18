@@ -1,0 +1,13 @@
+.counters{
+  @apply flex gap-[80px]
+}
+
+.counterItem{
+  @apply text-center;
+  .itemKey{
+    @apply text-2xl text-brown;
+  }
+  .itemValue{
+    @apply text-xl text-white;
+  }
+}

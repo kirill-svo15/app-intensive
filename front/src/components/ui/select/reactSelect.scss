@@ -1,0 +1,44 @@
+.selectReact__control {
+  width: 319px !important;
+  background-color: #511734 !important;
+  border-color: rgba(181, 52, 113, 0.3) !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  min-height: 47px !important;
+
+}
+
+.selectReact__indicator-separator {
+  display: none !important;
+}
+
+.selectReact__input {
+  color: #F1E8E8 !important;
+}
+
+.selectReact__menu{
+  background-color: #511734 !important;
+
+}
+.selectReact__option{
+  color: #F1E8E8 !important;
+  &--is-focused{
+    background-color: rgba(255,255,255, 0.2) !important;
+  }
+}
+
+.selectReact__multi-value{
+  background-color: rgba(255,255,255, 0.2) !important;
+  &__label{
+    color: #F1E8E8 !important;
+  }
+}
+
+.selectReact__clear-indicator, .selectReact__dropdown-indicator{
+  cursor: pointer !important;
+}
+
+.selectReact__placeholder{
+      color: #F1E8E8 !important;
+
+}

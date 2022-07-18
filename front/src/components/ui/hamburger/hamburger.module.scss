@@ -1,0 +1,17 @@
+
+
+.hamburger {
+  @apply relative
+}
+
+.menu {
+  @apply absolute top-8 right-0 bg-white py-3 px-2 min-w-[116px]  rounded-md rounded-tr-none hidden ;
+
+  &.active {
+    @apply block;
+  }
+
+  > li {
+    @apply transition-colors hover:text-accent
+  }
+}
