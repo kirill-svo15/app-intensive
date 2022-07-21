@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 import styles from "./newWorkout.module.scss"
 
@@ -30,8 +31,9 @@ const NewWorkout = () => {
             <div className={styles.wrapper}>
                 <form className={styles.formWrapper} onSubmit={handleSubmit}>
                     <Field placeholder={'Name'} />
-                    <ReactSelect menuIsOpen/>
-                    <Button type={'submit'} cl={'other'} className={styles.formBtn}>
+                    <Link className={styles.linkLabel} to={'/new-exercise'}>Add new exercise</Link>
+                    <ReactSelect menuIsOpen className={styles.select}/>
+                    <Button type={'submit'} cl={'other'} className={styles.btn}>
                         Create
                     </Button>
                 </form>

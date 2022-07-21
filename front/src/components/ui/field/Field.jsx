@@ -1,9 +1,11 @@
 import styles from "./field.module.scss"
+import {useRef} from "react";
 
 
-const Field = ({children, placeholder}) => {
+const Field = ({children, placeholder ,value,onChange}) => {
+
     return (
-        <input className={styles.input} placeholder={placeholder}>
+        <input value={value} onChange={onChange} className={styles.input} placeholder={placeholder} >
             {children}
         </input>
     );
