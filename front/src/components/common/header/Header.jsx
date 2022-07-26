@@ -12,7 +12,7 @@ const Header = () => {
     const location = useLocation()
     const navigate = useNavigate()
 
-    const auth = true
+    const auth = false
 
     return (
         <header className={styles.header} >

@@ -13,3 +13,7 @@
 .wrapperBtns{
   @apply flex gap-2
 }
+
+.notFound{
+  @apply uppercase text-2xl text-center text-white flex justify-center
+}

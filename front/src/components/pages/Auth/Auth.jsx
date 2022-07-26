@@ -37,7 +37,7 @@ const Auth = () => {
                             required: 'email is require',
                         }}
                         render={({
-                            field:{value, onChange,ref}
+                            field:{value, onChange}
                         }) => (
                             <>
                                 <Field
