@@ -1,18 +1,21 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import NotFound from "./components/pages/404/Error404";
-import Home from "./components/pages/home/Home";
-import NewWorkout from "./components/pages/workout/NewWorkout";
-import Auth from "./components/pages/Auth/Auth";
+import Error404 from "./components/pages/404/Error404";
+import {routes} from "./dataRoutes";
+import useAuth from "./hooks/useAuth";
 
 const App = () => {
+	const {isAuth} =useAuth()
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path={'/'} element={<Home/>}/>
-				<Route path={'/new-workout'} element={<NewWorkout/>}/>
-				<Route path={'/auth'} element={<Auth/>}/>
-				<Route path={'*'} element={<NotFound/>}/>
+				{routes.map((el, idx) => {
+					if (el.auth && !isAuth) {
+						return false
+					}
+					return (<Route path={el.path} element={el.element} key={idx}/>)
+				})}
+				<Route path='*' element={<Error404/>}/>
 			</Routes>
 		</BrowserRouter>
 	);

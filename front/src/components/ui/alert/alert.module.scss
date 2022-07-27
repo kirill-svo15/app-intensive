@@ -1,3 +1,6 @@
 .alert{
-  @apply bg-accent min-h-[40px] w-[100%] text-center rounded-md flex items-center justify-center text-purple
+  @apply  min-h-[40px] w-[100%] text-center rounded-md flex items-center justify-center text-purple;
+  &.success{
+    @apply bg-emerald-600 text-white
+  }
 }
